@@ -1,0 +1,39 @@
+<script is:inline>
+    // Define colors for categories
+    const categoryColors = {
+        personal: "blue",
+        technical: "green",
+    };
+
+    // Function to determine category and set color
+    function setCategoryLinkColors() {
+        Array.from(document.querySelectorAll("a.tag")).forEach((e) => {
+            const href = e.getAttribute("href"); // Get the href attribute
+            if (href.includes("/tag/personal")) {
+                e.style.textDecorationColor = categoryColors.personal; // Apply 'personal' color
+            } else if (href.includes("/tag/technical")) {
+                e.style.textDecorationColor = categoryColors.technical; // Apply 'technical' color
+            } else {
+                e.style.textDecorationColor = "black"; // Default color for unknown categories
+            }
+        });
+    }
+
+    // Optional: Hover effect for tags
+    function setHoverListeners() {
+        Array.from(document.querySelectorAll("a.tag")).forEach((e) => {
+            e.addEventListener("mouseover", () => {
+                e.style.color = "darkgray"; // Example hover effect
+            });
+            e.addEventListener("mouseout", () => {
+                e.style.color = ""; // Revert hover effect
+            });
+        });
+    }
+
+    // Immediately set colors on page load
+    (function () {
+        setCategoryLinkColors();
+        setHoverListeners();
+    })();
+</script>
