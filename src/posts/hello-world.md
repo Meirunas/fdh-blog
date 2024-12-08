@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/BlogPost.astro
-title: 'Hello, world! -M- v1'
+title: 'Hello, world! -M- v2'
 slug: hello-world
 description: This is an example blog!
 tags:
