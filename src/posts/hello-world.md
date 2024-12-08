@@ -1,12 +1,11 @@
 ---
 layout: ../layouts/BlogPost.astro
-title: Hello, world!
+title: 'Hello, world! M'
 slug: hello-world
-description: >-
-  This is an example blog!
+description: This is an example blog!
 tags:
   - personal
-added: "May 01 2024"
+added: 2024-04-30T23:00:00.000Z
 ---
 
 This is an example blog post!
